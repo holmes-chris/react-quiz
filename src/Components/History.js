@@ -41,7 +41,7 @@ export default function History() {
                 ) : (
                     <div>
                         <div className="quiz-header">
-                            <h1 className="section-title">Quiz App - Title</h1>
+                            <h1 className="section-title">Quiz App</h1>
                             <div className="question-count">
                                 {/* //we are going to add 1 because the question array is on a zero based index */}
                                 <p>{currentQuestion + 1}/{Questions.History.length}</p>

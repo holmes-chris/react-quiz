@@ -40,7 +40,7 @@ export default function Science() {
                 ) : (
                     <div>
                         <div className="quiz-header">
-                            <h1 className="section-title">Quiz App - Title</h1>
+                            <h1 className="section-title">Quiz App</h1>
                             <div className="question-count">
                                 <p>{currentQuestion + 1}/{Questions.Science.length}</p>
                             </div>

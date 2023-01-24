@@ -122,7 +122,7 @@ export const Questions = {
             ],
         },
         {
-            question: "What organ is responsible for pumping blood around the body?",
+            question: "What organ is responsible for pumping blood?",
             options: [
                 { answer: 'Brain', correct: false },
                 { answer: 'Pancreas', correct: false },
