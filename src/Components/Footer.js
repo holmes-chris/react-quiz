@@ -21,19 +21,17 @@ export default function Footer({ showHistory, showScience, showMath, alertUser }
             <BottomNavigation className="footer"
                 showLabels
                 value={topic}
-                onChange={(topic) => {
-                    if (finalHistoryScore || finalMathScore || finalScienceScore === false) {
-                        //if the user clicks true
-                        if (alertUser()) {
-                            setTopic(topic);
-                            //the index refers to the position in the material ui bottom navigation
-                            if (topic === 0) {
-                                showHistory();
-                            } else if (topic === 1) {
-                                showMath();
-                            } else {
-                                showScience();
-                            }
+                onChange={(e, newTopic) => {
+                    //if the user clicks true
+                    if (alertUser()) {
+                        setTopic((prevTopic) => newTopic);
+                        //the index refers to the position in the material ui bottom navigation
+                        if (newTopic === 0) {
+                            showHistory();
+                        } else if (newTopic === 1) {
+                            showMath();
+                        } else {
+                            showScience();
                         }
                     }
                 }}
